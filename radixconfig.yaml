@@ -15,7 +15,7 @@ spec:
         groups:
         - "g_radix_platform_user"
   components:
-    - name: scenario-3
+    - name: scenario3
       src: "."
       ports:
        - 80
