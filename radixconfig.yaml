@@ -1,0 +1,22 @@
+apiVersion: radix.equinor.com/v1
+kind: RadixApplication
+metadata:
+  name: radix-simple-react
+spec:
+  environments:
+    - name: development
+      authorization:
+      - role: RadixAppAdmin
+        groups:
+        - "g_radix_platform_user"
+    - name: production
+      authorization:
+      - role: RadixAppAdmin
+        groups:
+        - "g_radix_platform_user"
+  components:
+    - name: scenario - 3
+      src: "."
+      ports:
+       - 80
+      public: true
