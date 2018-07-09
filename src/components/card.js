@@ -42,7 +42,7 @@ export default class Card extends Component {
             </ul>
           </div>
           <div className="card-action">
-            <label>Volume <br/> {String(this.props.coin.volume).replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</label>
+            <label>Volume <br/> {parseFloat(this.props.coin.volume).toLocaleString()}</label>
           </div>
         </div>
       </div>
