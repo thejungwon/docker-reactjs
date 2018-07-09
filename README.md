@@ -1,1 +1,1 @@
-React Simple Example
+React Simple Example(nginx)
