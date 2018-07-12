@@ -25,7 +25,7 @@ export default class MainContainer extends Component {
     });
   }
   componentDidMount() {
-    this.intervalId = setInterval(this.timer.bind(this), 1500);
+    this.intervalId = setInterval(this.timer.bind(this), 2000);
     fetch('https://api.coinone.co.kr/ticker?currency=all')
     .then(results => {
       return results.json();

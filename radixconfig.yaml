@@ -15,7 +15,7 @@ spec:
         groups:
         - "g_radix_platform_user"
   components:
-    - name: www
+    - name: app
       src: "."
       ports:
        - 80
