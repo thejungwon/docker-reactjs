@@ -42,16 +42,6 @@ export default class MainContainer extends Component {
   componentWillUnmount(){
     clearInterval(this.intervalId);
   }
-  // componentDidUpdate(prevProps, prevState, snapshot){
-  //   if (!prevState.coins.length){
-  //     return;
-  //   }
-  //   for(var i = 0; i<this.state.coins.length; i++ ) {
-  //       if (this.state.coins[i].last !== prevState.coins[i].last){
-  //         console.log("different");
-  //       }
-  //     }
-  // }
 
   renderCoinCard(){
 
