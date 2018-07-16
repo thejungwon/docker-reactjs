@@ -27,7 +27,7 @@ Before you upload the app to the platform, you can test the app from your local 
 
 ```
 git clone https://github.com/MuchasEstrellas/radix-simple-react.git
-cd radix-simpl-react
+cd radix-simple-react
 docker build -t radix-simple-react .
 docker run -p 80:80 radix-simple-react
 ```
