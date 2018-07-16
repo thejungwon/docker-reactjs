@@ -12,15 +12,6 @@ App with one container. Reading from external open API. No storage. No secrets. 
 Please, follow the steps in the Omnia Radix wiki page.
 
 
-
-### Break down into end to end tests
-
-There are mainly three cases when your deployment fails in the platform but, succeed in your local environment.
-  * When 'radixconfig.yaml' is incorrect.
-  * When the setting in the web-console is incorrect.
-  * The platform is too busy to handle.
-
-
 ## Running the tests
 
 Before you upload the app to the platform, you can test the app from your local environment.
@@ -31,9 +22,16 @@ cd radix-simple-react
 docker build -t radix-simple-react .
 docker run -p 80:80 radix-simple-react
 ```
+## Troubleshooting
+
+There are mainly three cases when your deployment fails in the platform but, succeed in your local environment.
+  * When 'radixconfig.yaml' is incorrect.
+  * When the setting in the web-console is incorrect.
+  * The platform is too busy to handle.
 
 ## Built With
 
+* [Nginx](https://nginx.org/en/) - Web server
 * [React.js](https://reactjs.org/) - The front-end framework used
 * [Docker](https://www.docker.com/) -  Containerization
 
