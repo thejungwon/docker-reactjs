@@ -6,7 +6,7 @@ Sample react.js application for the Omnia Radix platform.
 
 App with one container. Reading from external open API. No storage. No secrets. Dynamic web page - including information from external API.
 
-![Screen Shopt](image/screenshot.png?raw=true "Screen Shot")
+![Screen Shopt](images/screenshot.png?raw=true "Screen Shot")
 ### Deployment
 
 Please, follow the steps in the Omnia Radix wiki page.
