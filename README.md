@@ -6,15 +6,6 @@ Sample react.js application for the Omnia Radix platform.
 
 App with one container. Reading from external open API. No storage. No secrets. Dynamic web page - including information from external API.
 
-## Running the tests
-
-Before you upload it to the platform, you can check the application from your local machine with docker.
-
-```
-cd radix-simpl-react
-docker build -t radix-simple-react .
-docker run -p 80:80 radix-simple-react
-```
 
 ### Deployment
 
@@ -30,6 +21,16 @@ There are mainly three cases when your deployment fails in the platform but, suc
   * The platform is too busy to handle.
 
 
+## Running the tests
+
+Before you upload the app to the platform, you can test the app from your local environment.
+
+```
+git clone https://github.com/MuchasEstrellas/radix-simple-react.git
+cd radix-simpl-react
+docker build -t radix-simple-react .
+docker run -p 80:80 radix-simple-react
+```
 
 ## Built With
 
