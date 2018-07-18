@@ -3,18 +3,21 @@
 Sample react.js application for the Omnia Radix platform.
 
 ## Getting Started
-
+![Screen Shopt](images/screenshot.png?raw=true "Screen Shot")
 App with one container. Reading from external open API. No storage. No secrets. Dynamic web page - including information from external API.
 
-![Screen Shopt](images/screenshot.png?raw=true "Screen Shot")
-### Deployment
+### Prerequisites
 
-Please, follow the steps in the Omnia Radix wiki page.
+Make sure you have already installed Docker Engine.
+You don’t need to install Nginx or NPM, as both are provided by Docker images.
+
+```
+$ docker -v
+Docker version 18.03.1-ce, build 9ee9f40
+```
 
 
-## Running the tests
-
-Before you upload the app to the platform, you can test the app from your local environment.
+### Installing
 
 ```
 git clone https://github.com/MuchasEstrellas/radix-simple-react.git
@@ -22,19 +25,30 @@ cd radix-simple-react
 docker build -t radix-simple-react .
 docker run -p 80:80 radix-simple-react
 ```
-## Troubleshooting
 
-There are mainly three cases when your deployment fails in the platform but, succeed in your local environment.
-  * When 'radixconfig.yaml' is incorrect.
-  * When the setting in the web-console is incorrect.
-  * The platform is too busy to handle.
+## Running the tests
+
+TBD
+
+### Break down into end to end tests
+
+TBD
+
+### And coding style tests
+
+TBD
+
+### Deployment
+
+Please, follow the steps in the Omnia Radix wiki page.
+
 
 ## Built With
 
 * [Nginx](https://nginx.org/en/) - Web server
 * [React.js](https://reactjs.org/) - The front-end framework used
-* [Docker](https://www.docker.com/) -  Containerization
-
+* [Docker](https://www.docker.com/) - Containerization
+* [Materialize](https://materializecss.com/) - Front-end framework
 
 
 ## Authors
