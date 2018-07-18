@@ -21,9 +21,9 @@ Docker version 18.03.1-ce, build 9ee9f40
 
 ```
 git clone https://github.com/MuchasEstrellas/radix-reactjs-scenario3.git
-cd radix-reactjs-scenario3
-docker build -t radix-reactjs-scenario3 .
-docker run -p 80:80 radix-reactjs-scenario3
+cd radix-scenario3-reactjs
+docker build -t radix-scenario3-reactjs .
+docker run -p 80:80 radix-scenario3-reactjs
 ```
 
 ## Running the tests
