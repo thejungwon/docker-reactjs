@@ -20,10 +20,10 @@ Docker version 18.03.1-ce, build 9ee9f40
 ### Installing
 
 ```
-git clone https://github.com/MuchasEstrellas/radix-simple-react.git
-cd radix-simple-react
-docker build -t radix-simple-react .
-docker run -p 80:80 radix-simple-react
+git clone https://github.com/MuchasEstrellas/radix-reactjs-scenario3.git
+cd radix-reactjs-scenario3
+docker build -t radix-reactjs-scenario3 .
+docker run -p 80:80 radix-reactjs-scenario3
 ```
 
 ## Running the tests
