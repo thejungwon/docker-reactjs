@@ -20,10 +20,10 @@ Docker version 18.03.1-ce, build 9ee9f40
 ### Installing
 
 ```
-git clone https://github.com/MuchasEstrellas/radix-reactjs-scenario3.git
-cd radix-scenario3-reactjs
-docker build -t radix-scenario3-reactjs .
-docker run -p 80:80 radix-scenario3-reactjs
+git clone https://github.com/MuchasEstrellas/docker-reactjs.git
+cd docker-reactjs
+docker build -t docker-reactjs .
+docker run -p 80:80 docker-reactjs
 ```
 
 ## Running the tests
@@ -37,10 +37,6 @@ TBD
 ### And coding style tests
 
 TBD
-
-### Deployment
-
-Please, follow the steps in the Omnia Radix wiki page.
 
 
 ## Built With
