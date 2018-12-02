@@ -1,6 +1,6 @@
-# Radix Simple React
+# Simple React
 
-Sample react.js application for the Omnia Radix platform.
+Sample React.js application for the Docker environment.
 
 ## Getting Started
 ![Screen Shopt](images/screenshot.png?raw=true "Screen Shot")
