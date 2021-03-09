@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
 import Card from './card';
+import axios from 'axios';
+
+
 
 export default class MainContainer extends Component {
   constructor(){
@@ -8,13 +11,24 @@ export default class MainContainer extends Component {
     this.state = {
       coins:[],
     }
+    this.url = 'https://thingproxy.freeboard.io/fetch/https://api.coinone.co.kr/ticker?currency=all'
+    this.headers = {
+      'content-type': 'application/json',
+      'accept': 'application/json',
+    };
+
+    this.options = {
+      headers: this.headers,
+      timeout: 5000,
+    };
   }
   currencies = {};
-  timer() {
-    fetch('https://api.coinone.co.kr/ticker?currency=all')
-    .then(results => {
-      return results.json();
-    }).then(data => {
+
+  getData(){
+    axios.get(this.url,this.options)
+    .then(result => {
+      
+      let data = result.data;
       let coins = [];
       Object.keys(data).map((k,i) => {
         if(data[k].last){
@@ -24,20 +38,12 @@ export default class MainContainer extends Component {
       this.setState({coins:coins});
     });
   }
+  timer() {
+    this.getData();
+  }
   componentDidMount() {
     this.intervalId = setInterval(this.timer.bind(this), 2000);
-    fetch('https://api.coinone.co.kr/ticker?currency=all')
-    .then(results => {
-      return results.json();
-    }).then(data => {
-      var coins = []
-      Object.keys(data).map((k,i) => {
-        if(data[k].last){
-          coins.push(data[k]);
-        }
-      });
-      this.setState({coins:coins});
-    });
+    this.getData();
   }
   componentWillUnmount(){
     clearInterval(this.intervalId);
