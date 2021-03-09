@@ -25,8 +25,8 @@ cd docker-reactjs
 docker build -t docker-reactjs .
 docker run -p 80:80 docker-reactjs
 
-# go to [https://localhost](https://localhost)
 ```
+Go to [http://localhost](http://localhost)
 
 ## Running the tests
 
