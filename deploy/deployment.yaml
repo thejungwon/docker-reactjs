@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: react-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: react-demo
+  template:
+    metadata:
+      labels:
+        app: react-demo
+    spec:
+      containers:
+      - name: react-demo
+        image: gcr.io/dev-playground-366808/my-app:latest
+        ports:
+        - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: react-demo
+spec:
+  type: ClusterIP
+  selector:
+    app: react-demo
+  ports:
+  - port: 8080
