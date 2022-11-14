@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: react-demo
-        image: gcr.io/dev-playground-366808/my-app:3a339b7996fedbbd7cd1097e2c265bd95a388ea7
+        image: gcr.io/dev-playground-366808/my-app:f1e60c5b44a0df7d63d6f13f916da57a7be79e89
         ports:
         - containerPort: 8080
 ---
