@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-app
+  template:
+    metadata:
+      labels:
+        app: my-app
+    spec:
+      imagePullSecrets:
+      - name: testing  # Name of the secret you created
+      containers:
+      - name: test
+        image: myacrferfefd345.azurecr.io/test:$(Build.BuildId) # Replace with your image details
+        ports:
+        - containerPort: 80
